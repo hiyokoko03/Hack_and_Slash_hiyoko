@@ -1,41 +1,55 @@
-# Prerequisites
-*.d
+# ---------------------------------
+# Visual Studio & Build Settings
+# ---------------------------------
+# ユーザーごとの設定ファイル（絶対にいらない）
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# ビルドの中間ファイル・出力ファイル（自動生成されるのでいらない）
+Intermediate/
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# コンパイル時に生成されるゴミ（オブジェクトファイルなど）
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
 *.pdb
+*.idb
+*.ilk
+*.pch
+*.tlog
+*.ipch
+*.aps
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Intellisense（入力補完）のデータベース
+*.db
+*.opendb
+*.vc.db
 
-# Fortran module files
-*.mod
-*.smod
+# ---------------------------------
+# OS Generated
+# ---------------------------------
+# WindowsやMacが勝手に作るサムネイル情報など
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# ---------------------------------
+# Siv3D / Game Specific
+# ---------------------------------
+# 実行ファイル（ソースがあれば作れるので基本いらない）
 *.exe
-*.out
-*.app
+# ※もし完成品としてのexeもGit管理したい場合は上の行を消してください
 
-# debug information files
-*.dwo
+# ログファイルなど
+Log/
+*.log
+
+# Appフォルダ（アセット）はGit管理 *する* ので、ここには書かない！
